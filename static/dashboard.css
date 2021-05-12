@@ -1,0 +1,74 @@
+/* Dashboard */
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+/* .container{
+    border: 2px solid black;
+} */
+
+.container .rows{
+    display: flex;
+    align-items: center;
+    width: 68%;
+    border: 2px solid;
+    margin-left: 144px;
+    margin-top: 20px;
+    height: 500px;
+}
+
+.left{
+   
+ 
+    height: 500px;
+    background: #694a4a;;
+    margin-right: 84px;
+}
+
+/* ul p{
+    color: white;
+    font-size: 17px;
+    padding: 6px 14px;
+} */
+
+.right{
+    font-size: 50px;
+    color: crimson;
+ 
+}
+
+li{
+    color: white;
+    padding: 11px 56px;
+}
+
+.icons i{
+    /* padding-top:15px; */
+    padding: 0px 6px;
+    color: black;
+    font-size: 25px;
+    /* height: 35px; */
+    /* width: px; */
+}
+
+ .head{
+    /* padding: 5px; */
+    font-weight: 800;
+}
+
+ .row{
+    display: flex;
+
+    padding: 10px 23px;
+    align-items: center;
+    color: white;
+}
+
+
+.left p{
+    padding: 7px 10px;
+    font-size: 23px;
+    color: white;
+}

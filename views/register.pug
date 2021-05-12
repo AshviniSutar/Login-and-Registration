@@ -1,0 +1,55 @@
+//- doctype html
+//- head
+//-   meta(charset='UTF-8')
+//-   meta(name='viewport' content='width=device-width, initial-scale=1.0')
+//-   title Best Online Food Delivery Service
+//-   link(rel='stylesheet' href='/static/style.css')
+//- section#contact
+//-   p.big Register
+//-   form(action="/", method="post")
+//-     //- .formgroup
+//-     //-   | Name
+//-     //-   input.fm(type='text' placeholder='Enter your name')
+//-     .formgroup
+//-       | Email  
+//-       input.fm(type='email' name='Email' id='' placeholder='Enter your Email')
+//-     .formgroup
+//-       | Password 
+//-       input.fm(type='password' name='Pass' placeholder='Enter yout phone number')
+//-     button(class="btn")
+//-        | Register
+
+
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Best Online Food Delivery Service
+  link(rel='stylesheet' href='/static/style.css')
+section#contact
+  .container
+    .header
+      .logo
+        | Registration form:
+    .b
+      .large Welocome to globiliti
+      // <div class="small">Login here</div>
+      .row
+        .col.left
+          form(action='/', method="post")
+            .formgroup
+              label.label(for='Name') Name
+              input.fm(type='name' name='Name' id='' placeholder='Enter your Name')
+            .formgroup
+              label.label(for='Email') Email
+              input.fm(type='email' name='Email' id='' placeholder='Enter your Email')
+            .formgroup
+              label.label(for='Password') Password
+              input.fm(type='password' name='Pass' placeholder='Enter yout phone number')
+            input.sub(type='submit' value='submit')
+            a(href='/') Login
+        .col.right
+          img(src='/static/3rd.jpg' alt='')
+
+
+ 
