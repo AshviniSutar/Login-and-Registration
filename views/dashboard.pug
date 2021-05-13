@@ -1,54 +1,146 @@
+//- doctype html
+//- head
+//-   meta(charset='UTF-8')
+//-   meta(name='viewport' content='width=device-width, initial-scale=1.0')
+//-   title Dashboard
+//-   link(rel='stylesheet' href='/static/dashboard.css')
+//-   script(src='https://kit.fontawesome.com/a076d05399.js')
+//- .container
+//-   .rows
+//-     .left
+//-      p Globiliti   
+//-       .icons
+//-         .row
+//-           i.fas.fa-home
+//-           .info
+//-             .head Home
+//-         .row
+//-           i.fas.fa-inbox 
+//-           .info
+//-             .head Inbox
+//-         .row
+//-           i.fas.fa-envelope
+//-           .info
+//-             .head Team
+//-         hr
+//-         p Team members
+//-         .icons
+//-         .row
+//-           i.fas.fa-user
+//-           .info
+//-             .head Abc
+//-         .row
+//-           i.fas.fa-user 
+//-           .info
+//-             .head XYZ
+//-         .row
+//-           i.fas.fa-user
+//-           .info
+//-             .head PQr
+//-         //
+//-           <ul>
+//-           <li>Home</li>
+//-           <li>My Photos</li>
+//-           <li>Inbox</li>
+//-           <li>My team</li>
+//-           </ul>
+//-     //-   .lower
+//-     //-     ul
+//-     //-       li ABC
+//-     //-       li ABC
+//-     //-       li ABC
+//-     //-       li ABC
+//-     .right
+//-       p  Welcome to globiliti
+
+
+
 doctype html
 head
   meta(charset='UTF-8')
   meta(name='viewport' content='width=device-width, initial-scale=1.0')
-  title Dashboard
-  link(rel='stylesheet' href='/static/dashboard.css')
   script(src='https://kit.fontawesome.com/a076d05399.js')
+  link(rel='stylesheet' href='/static/dashboard.css')
+  title  DASHBOARD
 .container
-  .rows
-    .left
-     p Globiliti   
-      .icons
-        .row
-          i.fas.fa-home
-          .info
-            .head Home
-        .row
-          i.fas.fa-inbox 
-          .info
-            .head Inbox
-        .row
-          i.fas.fa-envelope
-          .info
-            .head Team
-        hr
-        p Team members
-        .icons
-        .row
-          i.fas.fa-user
-          .info
-            .head Abc
-        .row
-          i.fas.fa-user 
-          .info
-            .head XYZ
-        .row
-          i.fas.fa-user
-          .info
-            .head PQr
-        //
-          <ul>
-          <li>Home</li>
-          <li>My Photos</li>
-          <li>Inbox</li>
-          <li>My team</li>
-          </ul>
-    //-   .lower
-    //-     ul
-    //-       li ABC
-    //-       li ABC
-    //-       li ABC
-    //-       li ABC
-    .right
-      p  Welcome to globiliti
+  .main__container
+    .main__title
+      img(src='assets/hello.svg' alt='')
+      .main__greeting
+        h1 Academy
+        p Welcome to your admin dashboard
+    nav.navbar
+      .nav_icon(onclick='toggleSidebar()')
+        i.fa.fa-bars(aria-hidden='true')
+      .navbar__left
+        a(href='#') Impact compaigns
+        a(href='#') Learning tools
+        a.active_link(href='#') Tools piolsts
+      .navbar__right
+    main
+      .main__cards
+        .card
+          i.fa.fa-thumbs-up.text-lightblue(aria-hidden='true')
+          .card_inner
+            p.text-primary-p class
+        .card
+          i.fa.fa-calendar.fa-2x.text-red(aria-hidden='true')
+          .card_inner
+            p.text-primary-p Learning tools
+        .card
+          i.fa.fa-user.fa-2x.text-yellow(aria-hidden='true')
+          .card_inner
+            p.text-primary-p Reading
+      .charts
+        .card
+          i.fa.fa-thumbs-up.fa-2x.text-green(aria-hidden='true')
+          .card_inner
+            p.text-primary-p Career
+        .charts__right__cards
+          .card1
+            h1 Class craft
+          .card2
+            h1 Paragon
+        .charts__left
+          .charts__left__title
+            div
+              h1 Career
+            i.fa.fa-btn(aria-hidden='true') medium
+          #apex1
+        .charts__right
+          .charts__right__title
+            div
+              h1 Education
+            i.fa.fa-(aria-hidden='true') Approval
+  #sidebar
+    .sidebar__title
+      .sidebar__img
+        img(src='/static/3rd.jpg' alt='logo')
+        h1 Globiliti
+    .sidebar__menu
+      .sidebar__link
+        i.fa.fa-user-secret(aria-hidden='true')
+        a(href='#') Home
+      .sidebar__link
+        i.fa.fa-home
+        a(href='#') My pilots
+      .sidebar__link
+        i.fa.fa-inbox
+        a(href='#') Inbox
+      .sidebar__link
+        i.fa.fa-envelope
+        a(href='#') My team
+      hr
+      h2 Team member
+      .sidebar__link
+        i.fa.fa-user
+        a(href='#') Abc
+      .sidebar__link
+        i.fa.fa-user
+        a(href='#') Xyz
+      .sidebar__link
+        i.fa.fa-user
+        a(href='#') Pqr
+      .sidebar__link
+        i.fa.fa-user
+        a(href='#') lmn
